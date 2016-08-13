@@ -1,0 +1,309 @@
+/* layout */
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+  margin-bottom: 2em;
+  font-family: 'メイリオ','Hiragino Kaku Gothic Pro', sans-serif;
+}
+.glyphicon {
+  margin-right: 6px;
+}
+#footer {
+  bottom: 0;
+  height: 2em;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: #999;
+  border-top: solid 1px #ccc;
+}
+
+/* welcome register login*/
+.welcome, .register, .login {
+  margin-top: 20px;
+}
+.login-btn .btn {
+  width: 100%;
+  margin-top: 15px;
+}
+.login-btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* button */
+.makeNewButton {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+
+/* nav */
+.mynav {
+  background-color: #f5ee55;
+  border-bottom: solid 1px black;
+  padding: 3px;
+}
+.mynav:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.mynav-title {
+  font-family: cursive;
+  font-size: 26px;
+  font-weight: bold;
+  color: purple;
+  float: left;
+}
+.mynav-right {
+  font-size: 14px;
+  background-color: MidnightBlue;
+  padding: 3px 6px;
+  margin: 5px 0 0 30px;
+  float: left;
+}
+.mynav-right a {color: white;}
+.mynav-right li {list-style: none;}
+
+/* menubar */
+.mymenu {
+  margin-bottom: 15px;
+  background-color: #000;
+}
+.mymenu:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.mymenu li {
+  float: left;
+  width: auto;
+  list-style: none;
+}
+.mymenu li a {
+  color: #fff;
+  display: block;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+.mymenu li a:hover {
+  background-color: #555;
+}
+
+
+
+
+/* message */
+.message-header:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.message-header .left {
+  float: left;
+  width: 47%;
+}
+.message-header .right {
+  float: right;
+  width: 47%;
+}
+.message-table {
+  position: relative;
+  margin-bottom: 0;
+}
+.message-table tr[data-hasRead="1"] {
+  background-color: #eaeaea;
+}
+.message-table tr[data-href]:hover {
+  cursor: pointer;
+  background-color: #daefff;
+}
+.message-table a {
+  color: #000;
+  text-decoration: none;
+}
+.message-table thead {
+  color: #fff;
+  background-color: navy;
+}
+.message-table tr:last-child {
+  border-bottom: solid 1px #ccc;
+}
+.message-table button i{
+  margin: 0px;
+}
+.message-table button {
+  padding: 3px 4px 0px 3px;
+  margin: 0px;
+  position: absolute;
+  right: 10px;
+}
+
+
+/* write message */
+.btn-group {
+  margin-bottom: 10px;
+}
+#address-box {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+#address-box .label {
+  font-size: 12px;
+  margin-left: 5px;
+}
+#address-box .glyphicon {
+  color: tomato;
+  vertical-align: middle;
+  margin-left: 5px;
+  margin-right: 0;
+}
+
+
+/* schedule, tasks */
+#schedule-page-weekly-calendar {
+  padding-bottom: 20px;
+}
+.calendar-nav {
+    text-align: center;
+}
+.calendar-nav i {
+    margin: 0;
+}
+.calendar table{
+    table-layout: fixed;
+    width: 100%;
+}
+.calendar table th {
+    text-align: center;
+    background: #eee;
+    width: auto;
+}
+.calendar .monthly table td {
+    vertical-align: top;
+    height: 80px;
+}
+.calendar .weekly table td {
+    vertical-align: top;
+    height: 120px;
+}
+.calendar table th, .calendar table td {
+    font-size: 12px;
+    border: 1px solid #888;
+    word-break: break-all;
+}
+.calendar table th[class="username"] {font-size: 14px;}
+.calendar table th[class="Sun"] {color: tomato;}
+.calendar table th[class="Sat"] {color: royalblue;}
+.calendar table td[class="Sun"] {background-color: #feaaa2;}
+.calendar table td[class="Sat"] {background-color: #d1eeee;}
+.calendar a[class="edit"] {
+  color: #000;
+}
+.delete-task {
+  text-align: center;
+}
+
+/* add task */
+.add-task .ib {
+  display: inline-block;
+}
+.add-task .task-form {
+  text-align: center;
+}
+.add-task .ymd-input .date-input {
+  margin-right: 5px;
+}
+.add-task .date-input {
+  float: left;
+}
+.add-task .ymd-input, .add-task .start_time, .add-task .end_time {
+  clear: both;
+}
+.add-task .btn {
+  margin-top: 10px;
+}
+
+
+/* chat */
+.chat-container {
+  max-width: 700px;
+}
+.topic-container .title {
+  font-weight: bold;
+}
+.topic-container a {
+  text-decoration: none;
+}
+.topic-container a .panel:hover {
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.2);
+}
+.topic-title {
+  background-color: rgba(91,192,222,0.3);
+  font-size: 18px;
+  padding: 3px 5px;
+  width: 100%;
+}
+.chat-content {
+  /*position: absolute;
+  max-width: 700px;*/
+  background-color: lightblue;
+  padding: 5px 5px;
+  height: 500px;
+  overflow: scroll;
+}
+.chat-content:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.chat-content .left {
+  clear: both;
+  float: left;
+}
+.chat-content .right {
+  clear: both;
+  float: right;
+}
+#hasRead-tag {
+  /*position: relative;*/
+  width: 100%;
+  font-family: cursive;
+  font-weight: bold;
+  text-align: center;
+  clear: both;
+  padding: 20px;
+}
+.chat-content .remarks {
+  font-size: 15px;
+  padding: 3px;
+  background-color: white;
+  border-radius: 4px;
+}
+.chat-content .ownRemark {
+  margin-top: 5px;
+  background-color: lawngreen;
+}
+.chatform:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.chatform .body {
+  float: left;
+  width: 70%;
+}
+.chatform .button {
+  float: left;
+  width:
+}
+.chatform textarea {
+  width: 100%;
+}
+#ajax-error {
+  font-weight: bold;
+  color: red;
+}
